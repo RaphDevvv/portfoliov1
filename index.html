@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RaphDev</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Archivo', sans-serif;
+font-family: 'Heebo', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+    }
+
+    body {
+      background-color: #000;
+}
+
+    
+
+@media only screen and (max-width: 700px) {
+  .box {
+  position: absolute;
+  top: 68vmin;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  .planet1 {
+    background: linear-gradient(#715AFF, #FFFFFF 300%);
+    border-radius: 50%;
+    width: 65vmin;
+    height: 65vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -10vmin;
+    margin-top: -10vmin;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  .planet1:hover {
+    background: linear-gradient(#553bff, #FFFFFF 300%);
+  }
+
+  .planet1 h1 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 5vmin;
+   margin-bottom: 2.5vmin;
+  }
+
+  .planet1 img {
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 50%;
+    margin-bottom: 1vmin;
+ 
+  }
+
+  .planet1 p {
+    text-align: center;
+    color: white;
+    width: 35vmin;
+    font-size: 2.5vmin;
+  }
+
+  .planet2 {
+    background: linear-gradient(#36a3e2, #ff0101 250%);
+    border-radius: 50%;
+    width: 45vmin;
+    height: 45vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out forwards;
+    margin-left: 55vmin;
+    margin-top: -20vmin;
+  }
+
+  .planet2:hover {
+    background: linear-gradient(#209be2, #ec0808 250%)
+  }
+
+  .planet2 h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 2.5vmin;
+    text-align: center;
+    font-size: 5vmin;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2vmin;
+
+  }
+
+  .skills img {
+    width: 5vmin;
+  }
+
+  .planet3 {
+    background: linear-gradient(#102E4A, #009b22 500%);
+    border-radius: 50%;
+    width: 38vmin;
+    height: 38vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 3s ease-in-out forwards;
+    margin-left: 10vmin;
+    margin-top: -10vmin;
+  }
+
+  .planet3:hover {
+    background: linear-gradient(#0b2d50, #1eca46 400%)
+  }
+
+  .languages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2.5vmin;
+    text-align: center;
+  }
+
+  .planet3 h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 2svmin;
+    text-align: center;
+    font-size: 3vmin;
+  }
+
+  .planet3 p {
+    color: white;
+    font-weight: bold;
+    font-size: 2vmin;
+    margin-top: -1.5vmin;;
+  }
+
+  .languages img {
+    width: 7vmin;;
+  }
+
+  button {
+  width: 40vmin;
+  height: 10vmin;
+  border-radius: 45px;
+  background-color: #FFD700;
+  color: #000;
+  font-size: 4.5vmin;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  animation: fadeIn 4s ease-in-out forwards;
+  border: none;
+  margin-left: 30vmin;
+  margin-top: 15vmin;
+}
+
+
+  button:hover {
+    background-color: #FFA500; /* Set your desired background color on hover */
+  }
+  
+  .discord {
+      animation: fadeIn 1s ease-in-out forwards;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .discord img {
+      width: 30vmin;
+    }
+
+    .whatsapp {
+      animation: fadeIn 2s ease-in-out forwards;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .whatsapp img {
+      width: 30vmin;
+    }
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (min-width: 701px) {
+    .box {
+      width: 700px;
+      margin: 0 auto;
+      
+    }
+
+  .planet1 {
+    background: linear-gradient(#715AFF, #FFFFFF 300%);
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    max-width: 900px;
+    max-height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -90px;
+    margin-top: -90px;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  .planet1:hover {
+    background: linear-gradient(#553bff, #FFFFFF 300%);
+  }
+
+  .planet1 h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+  }
+
+  .planet1 img {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    margin-bottom: 4.5px;
+    
+  }
+
+  .planet1 p {
+    width: 450px;
+    text-align: center;
+    color: white;
+    width: 270px;
+  }
+
+  .planet2 {
+    background: linear-gradient(#36a3e2, #ff0101 250%);
+    border-radius: 50%;
+    width: 360px;
+    height: 360px;
+    max-width: 810px;
+    max-height: 810px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
+    margin-left: 425px;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+
+  .planet2:hover {
+    background: linear-gradient(#209be2, #ec0808 250%)
+  }
+
+  .planet2 h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 18px; /* Adjust the gap as needed */
+
+  }
+
+  .skills img {
+    width: 45px;
+  }
+
+  .planet3 {
+    background: linear-gradient(#102E4A, #009b22 500%);
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    max-width: 810px;
+    max-height: 810px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: -80px;
+    animation: fadeIn 3s ease-in-out forwards;
+  }
+
+  .planet3:hover {
+    background: linear-gradient(#0b2d50, #1eca46 400%)
+  }
+
+  .languages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 18px; /* Adjust the gap as needed */
+    text-align: center;
+  }
+
+  .planet3 h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .planet3 p {
+    color: white;
+    font-weight: bold;
+  }
+
+  .languages img {
+    width: 45px;
+  }
+
+  button {
+  width: 270px;
+  height: 90px;
+  border-radius: 45px;
+  background-color: #FFD700;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  animation: fadeIn 4s ease-in-out forwards;
+  border: none;
+  margin-left: 360px;
+  margin-top: -500px; /* Adjust this value to move the button up or down */
+}
+
+
+  button:hover {
+    background-color: #FFA500; /* Set your desired background color on hover */
+  }
+
+  .discord {
+      animation: fadeIn 1s ease-in-out forwards;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .discord img {
+      width: 30vmin;
+    }
+
+    .whatsapp {
+      animation: fadeIn 2s ease-in-out forwards;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+
+    .whatsapp img {
+      width: 30vmin;
+    }
+
+    
+    
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+  </style>
+</head>
+<body>
+<div class="box"><div class="planet1">
+    <h1>About me:</h1>
+    <img src="https://img-9gag-fun.9cache.com/photo/ap93yAE_460s.jpg">
+    <p>hi, i'm Raph, i'm a 18 year old brazilian who likes coding and languages, i also really like chocolate flavoured ice cream</p>
+
+  </div>
+
+  <div class="planet2">
+    <h1>skills:</h1>
+    <div class="skills">
+      <div class="html">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png"></div>
+      <div class="css">
+        <img src="https://logospng.org/download/css-3/logo-css-3-2048.png">
+      </div>
+      <div class="js">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+      </div>
+      <div class="nodejs">
+        <img src="https://static-00.iconduck.com/assets.00/node-js-icon-1817x2048-g8tzf91e.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="planet3">
+    <h1>Languages i speak:</h1>
+    <div class="languages">
+      <div class="port">
+        <img src="https://images.emojiterra.com/twitter/512px/1f1e7-1f1f7.png"><br>
+        <p>C2</p>
+      </div>
+
+      <div class="eng">
+        <img src="https://www.svgrepo.com//show/508668/flag-us.svg"><br>
+        <p>C1</p>
+      </div>
+
+      <div class="es">
+        <img src="https://images.emojiterra.com/twitter/512px/1f1ea-1f1f8.png"><br>
+        <p>B1</p>
+      </div>
+
+      <div class="ru">
+        <img src="https://images.emojiterra.com/twitter/512px/1f1f7-1f1fa.png"><br>
+        <p>A2</p>
+      </div>
+    </div>
+  </div>
+
+  <button onclick=changeIcons()>Contact Me</button>
+  
+  
+</div>
+
+
+<script>
+  function changeIcons() {
+    const languages = document.querySelector('.languages');
+    const planet3 = document.querySelector('.planet3');
+
+    // Clear existing content
+    languages.innerHTML = '';
+    planet3.innerHTML = '';
+
+    // Add new content with updated styles
+    planet3.innerHTML = `
+      <div class="discord">
+        <a href="https://discordapp.com/users/840062067670646797"><img src="https://static.vecteezy.com/system/resources/previews/018/930/604/original/discord-logo-discord-icon-transparent-free-png.png"></a>
+      </div>
+    `;
+
+    const skills = document.querySelector('.skills')
+    const planet2 = document.querySelector('.planet2')
+
+    skills.innerHTML = ''
+    planet2.innerHTML = ''
+
+    planet2.innerHTML = `
+        <div class="whatsapp">
+          <a href="https://wa.link/hr8zr1"><img src="https://i.pinimg.com/originals/79/dc/31/79dc31280371b8ffbe56ec656418e122.png"></a>
+        </div>
+    `;
+  }
+
+  
+  
+</script>
+</body>
+</html>
